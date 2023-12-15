@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root {
+    --cor-principal: #352F44;
+    --cor-secundaria: #FAF0E6;
+    --cor-terciaria: #B9B4C7;
+    --scollbar: #5C5470;
+}
+
+
+* {
+    margin:0; padding:0; border:0; 
+}
+
+body {
+
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+
+
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.Titulo {
+    color: var(--cor-terciaria) ;
+}
+
+.apresentacao {
+   margin: 10% 15%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.texto {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.texto_titulo{
+    font-size: 36px;
+    font-family: 'krona one', sans-serif;;
+}
+
+.texto_paragrafo{
+    font-size: 24px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'krona one', sans-serif;;
+}
+
+.apresentacao__links__botao {
+    padding: 16px 0;
+    width: 378px;
+
+    font-size: 24px;
+    font-family: 'montserrat', sans-serif;
+    color: var(--cor-secundaria);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+
+    
+    background-color: var(--cor-principal);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.apresentacao__links__botao:hover{
+    background: var(--scollbar);
+}
+
+.apresentacao__links__icone{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.rodape{
+    background-color: var(--cor-terciaria);
+    padding: 14px;
+}
+
+.rodape__texto{
+    color: var(--cor-principal);
+    font-size: 24px;
+    font-weight: 400;
+    font-family: montserrat;
+    text-align: center;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--scollbar);
+    border-radius: 20px;
+  }
